@@ -5,8 +5,8 @@ import treeViewData from "./data.json";
 function App() {
   return (
     <div className="App">
-      <div className="treeview-container">
-        <TreeView data={treeViewData} />
+      <div className="treeview-root">
+        <TreeView  data={treeViewData} />
       </div>
     </div>
   );
