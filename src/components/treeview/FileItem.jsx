@@ -3,14 +3,10 @@ import React from 'react';
 import { DocumentTextIcon} from '@heroicons/react/outline'
 
 
-class FileItem extends React.PureComponent {
-
-  render() {
-    const { name } = this.props
+const FileItem= (props)=> {
     return (
-      <div ><DocumentTextIcon className='documentTextIcon' />{name}</div>
+      <div ><DocumentTextIcon className='documentTextIcon' />{props.name}</div>
     );
   }
-}
 
 export default FileItem;
